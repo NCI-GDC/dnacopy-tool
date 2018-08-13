@@ -1,14 +1,15 @@
 #!/usr/bin/env Rscript
 
-# SNP6CBS
-# version: 2
+# SNP6CBS Parallel 
+# version: 2.1
 # author: Zhenyu Zhang
-# date: 02/13/2016
+# date: 08/10/2018
 # require: R > 3.20 
 #	   		data.table
 #	   		DNAcopy
 #			futile.logger
 #			tools
+#			parallel
 
 read.meta = function(file) {
 	# read SNP6 metadata information in rda/rdata/gz/txt/tsv/csv format
@@ -189,7 +190,7 @@ require(data.table)
 require(DNAcopy)
 require(futile.logger)
 require(tools)
-require("parallel")
+require(parallel)
 
 options(scipen=999)
 setwd("~/SCRATCH/dev/cbs3/production20180214")
