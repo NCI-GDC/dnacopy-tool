@@ -1,0 +1,10 @@
+Package: snp6cbs
+Title: Segment TCGA SNP6 tangent normalized data
+Version: 2.1
+Authors@R: person("Zhenyu", "Zhang", email = "zhenyuz.cdis@gmail.com",
+                  role = c("aut", "cre"))
+Description: The package converts TCGA SNP6 tangent normalized data (produced previously by TCGA using BirdSuite package) into copy number segmentation files
+Depends: R (>= 3.2.0), tools, parallel, data.table (>= 1.9.6), DNAcopy (>= 1.44.0), futile.logger (>= 1.4.3), optparser (>= 1.4.4)
+	
+License: Apache 2.0
+
